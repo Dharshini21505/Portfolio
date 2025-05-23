@@ -13,7 +13,15 @@ function Portfolio() {
 
       <section className="about">
         <h2>About Me</h2>
-        <p>I’m Dharshini N, a passionate B.Tech undergraduate specializing in Artificial Intelligence and Data Science at Anna University Regional Campus, Coimbatore. With a keen interest in technology-driven solutions, I’ve built hands-on experience in app development and data analysis through academic projects and internships. I am particularly interested in leveraging AI to solve real-world problems.</p>
+        <p>I’m Dharshini N, a passionate B.Tech student specializing in Artificial Intelligence and Data Science at Anna University Regional Campus, Coimbatore. I am deeply interested in leveraging cutting-edge technologies to solve real-world problems through data-driven solutions. Over the course of my studies and internships, I have gained hands-on experience in machine learning, app development, and data analysis, which has strengthened my technical skills and problem-solving abilities. I enjoy exploring new tools and frameworks, participating in tech workshops, and collaborating on projects that challenge me to grow. My goal is to build innovative AI-driven applications that make a meaningful impact while continuously expanding my knowledge in this exciting field.
+
+
+
+
+
+
+
+</p>
       </section>
 
       <section className="hobbies">
