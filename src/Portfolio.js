@@ -2,9 +2,12 @@ import React from 'react';
 import './App.css';
 import dharshiniPhoto from './assets/dharshini.jpg';
 import { SiPython, SiC, SiMysql, SiHtml5, SiCss3, SiJavascript } from 'react-icons/si';
-import { MdPeople } from 'react-icons/md';
-import { FaProjectDiagram } from 'react-icons/fa';
+import { MdPeople, MdEmail, MdPhone } from 'react-icons/md';
+import { FaProjectDiagram, FaLinkedin } from 'react-icons/fa';
 import { BsFileExcel } from 'react-icons/bs';
+ import { GiTrophy } from 'react-icons/gi'; 
+ import { FiAward } from 'react-icons/fi';
+
 
 function Portfolio() {
   return (
@@ -86,14 +89,25 @@ function Portfolio() {
         </ul>
       </section>
 
-      <section className="achievements">
-        <h2>Achievements</h2>
-        <ul>
-          <li>1st Place – Dark Code (National Level Technical Symposium)</li>
-          <li>AI Workshop – Coimbatore Institute of Technology</li>
-          <li>Employability Training – RUSA 2.0</li>
-        </ul>
-      </section>
+<section className="achievements">
+  <h2>Achievements</h2>
+  <div className="achievement-list">
+    <div className="achievement-card">
+      <FiAward className="achievement-icon" />
+      <span>1st Place – Dark Code (National Level Technical Symposium)</span>
+    </div>
+    <div className="achievement-card">
+      <FiAward className="achievement-icon" />
+      <span>AI Workshop – Coimbatore Institute of Technology</span>
+    </div>
+    <div className="achievement-card">
+      <FiAward className="achievement-icon" />
+      <span>Employability Training – RUSA 2.0</span>
+    </div>
+  </div>
+</section>
+
+
 
       <section className="education">
         <h2>Education</h2>
@@ -105,31 +119,26 @@ function Portfolio() {
       </section>
 
       <section className="contact">
-        <h2>Contact</h2>
-        <p>
-          Email:{' '}
-          <a href="mailto:dharshinin165@gmail.com" className="blue-link">
-            dharshinin165@gmail.com
-          </a>
-          <br />
-          Phone:{' '}
-          <a href="tel:+919789445458" className="blue-link">
-            +91 9789445458
-          </a>
-          <br />
-          LinkedIn:{' '}
-          <a
-            href="https://www.linkedin.com/in/dharshini-n-64b4a32a1"
-            target="_blank"
-            rel="noreferrer"
-            className="blue-link"
-          >
-            /dharshini-n-64b4a32a1
-          </a>
-          <br />
-          Location: Namakkal, Tamil Nadu – 637019
-        </p>
-      </section>
+  <h2>Contact</h2>
+  <div className="contact-icons">
+    <a href="mailto:dharshinin165@gmail.com" className="icon-link" title="Email">
+      <MdEmail size={40} />
+    </a>
+    <a href="tel:+919789445458" className="icon-link" title="Phone">
+      <MdPhone size={40} />
+    </a>
+    <a
+      href="https://www.linkedin.com/in/dharshini-n-64b4a32a1"
+      target="_blank"
+      rel="noreferrer"
+      className="icon-link"
+      title="LinkedIn"
+    >
+      <FaLinkedin size={40} />
+    </a>
+  </div>
+</section>
+
 
       <footer className="footer">
         <p>© 2025 Dharshini N. All rights reserved.</p>

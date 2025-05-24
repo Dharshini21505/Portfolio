@@ -4,7 +4,7 @@ body, html, #root, .App {
   padding: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #f9f9f9;
-  color: #333;
+  color: #333333;
 }
 
 /* Container */
@@ -164,4 +164,57 @@ a:hover {
     width: 100%;
     justify-content: center;
   }
+}
+
+/* Contact icons styling */
+.contact-icons {
+  display: flex;
+  gap: 30px; /* increased gap for bigger icons */
+  margin-top: 15px;
+}
+
+.icon-link {
+  color: #2b2d42;
+  transition: transform 0.2s ease;
+  display: flex;
+  align-items: center;
+  font-size: 40px; /* Ensure icon is big */
+}
+
+.icon-link:hover {
+  transform: scale(1.2);
+  color: #1b1d32;
+  cursor: pointer;
+}
+
+.achievements .achievement-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-left: 10px;
+}
+
+.achievement-card {
+  display: flex;
+  align-items: center;
+  background-color: #e6e9f0;  /* same as skill-tag background */
+  padding: 10px 15px;
+  border-radius: 20px;
+  color: #2b2d42; /* same as skill-tag text */
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: default;
+  transition: background-color 0.3s ease;
+}
+
+.achievement-card:hover {
+  background-color: #d1d4e0;
+}
+
+.achievement-icon {
+  width: 22px;
+  height: 22px;
+  margin-right: 12px;
+  fill: currentColor;
+  flex-shrink: 0;
 }
